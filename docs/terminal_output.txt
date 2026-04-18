@@ -1,0 +1,58 @@
+ID       TECHNIQUE    TACTIC                 SEV      TITLE
+----------------------------------------------------------------------------------------------------
+R-0002   T1003.001    Credential Access      CRITICAL Mimikatz / LSASS Memory Access
+R-0005   T1021.002    Lateral Movement       CRITICAL Impacket-style Remote Service Execution (wmiexec/psexec)
+R-0011   T1027        Defense Evasion        MEDIUM   Suspicious Base64-Encoded PowerShell Payload
+R-0003   T1053.005    Persistence            MEDIUM   Suspicious Scheduled Task Creation via schtasks.exe
+R-0006   T1059        Execution              HIGH     Suspicious Office Child Process (macro malware)
+R-0001   T1059.001    Execution              HIGH     PowerShell Encoded Command Execution
+R-0009   T1071.004    Command and Control    HIGH     Suspicious DNS Tunneling Query Size
+R-0007   T1078.004    Privilege Escalation   HIGH     AWS Root Account Usage
+R-0012   T1098        Privilege Escalation   CRITICAL New User Added to Domain Admins
+R-0004   T1197        Defense Evasion        HIGH     Suspicious BITS Job Created for Download (Living-off-the-land)
+R-0008   T1562.001    Defense Evasion        HIGH     Disable Windows Defender via Registry
+R-0010   T1610        Execution              HIGH     Kubernetes Exec Into Privileged Pod
+---
+
+MITRE ATT&CK Coverage
+============================================================
+Total rules: 12
+Tactics covered: 7
+Techniques covered: 12
+
+  Command and Control    1 rule(s)
+    - T1071.004  Suspicious DNS Tunneling Query Size
+  Credential Access      1 rule(s)
+    - T1003.001  Mimikatz / LSASS Memory Access
+  Defense Evasion        3 rule(s)
+    - T1197      Suspicious BITS Job Created for Download (Living-off-the-land)
+    - T1562.001  Disable Windows Defender via Registry
+    - T1027      Suspicious Base64-Encoded PowerShell Payload
+  Execution              3 rule(s)
+    - T1059.001  PowerShell Encoded Command Execution
+    - T1059      Suspicious Office Child Process (macro malware)
+    - T1610      Kubernetes Exec Into Privileged Pod
+  Lateral Movement       1 rule(s)
+    - T1021.002  Impacket-style Remote Service Execution (wmiexec/psexec)
+  Persistence            1 rule(s)
+    - T1053.005  Suspicious Scheduled Task Creation via schtasks.exe
+  Privilege Escalation   2 rule(s)
+    - T1078.004  AWS Root Account Usage
+    - T1098      New User Added to Domain Admins
+
+[+] HTML coverage map: reports/mitre_coverage.html
+---
+[*] Events scanned: 12
+[*] Total rule hits: 10
+
+By rule:
+  R-0001  x1  [HIGH] PowerShell Encoded Command Execution
+  R-0003  x1  [MEDIUM] Suspicious Scheduled Task Creation via schtasks.exe
+  R-0004  x1  [HIGH] Suspicious BITS Job Created for Download (Living-off-the-land)
+  R-0002  x1  [CRITICAL] Mimikatz / LSASS Memory Access
+  R-0005  x1  [CRITICAL] Impacket-style Remote Service Execution (wmiexec/psexec)
+  R-0006  x1  [HIGH] Suspicious Office Child Process (macro malware)
+  R-0008  x1  [HIGH] Disable Windows Defender via Registry
+  R-0007  x1  [HIGH] AWS Root Account Usage
+  R-0011  x1  [MEDIUM] Suspicious Base64-Encoded PowerShell Payload
+  R-0012  x1  [CRITICAL] New User Added to Domain Admins

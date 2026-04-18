@@ -1,0 +1,2 @@
+# MITRE ATT&CK Detection Rules Library has zero runtime dependencies.
+# Uses only Python 3.8+ stdlib (json, re, pathlib, dataclasses, argparse, html).

